@@ -1,5 +1,6 @@
 # Signed release for the Skills IL "signed_release" check (agentskills.co.il):
 # a v* tag gets a Sigstore build-provenance attestation over the skill files.
+# No release assets: both skills are named SKILL.md, and same-named uploads 404 (v1.1.0 failed so).
 name: Release
 on:
   push:
@@ -22,4 +23,4 @@ jobs:
       - name: Create GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --generate-notes skills/*/SKILL.md
+        run: gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --generate-notes
