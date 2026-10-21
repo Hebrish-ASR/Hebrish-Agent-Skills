@@ -1,10 +1,8 @@
 ---
 name: troubleshoot-hebrish-linux
-description: Diagnose and fix problems with the Hebrish dictation app (hebrish.app) on Linux - the hotkey does nothing, text is not pasted or lands only on the clipboard, no microphone or no level, the model download fails, no tray icon, and APT errors from the Hebrish repository (NO_PUBKEY or signature errors, wrong architecture, unsupported Ubuntu version, package or source missing after a purge). Use when a user reports that Hebrish on Ubuntu or Linux is not working, or an apt command mentions cdn.hebrish.app.
-metadata:
-  publisher: hebrish.app
-  updated: "2026-10-21"
-  source: https://github.com/Hebrish-ASR/Hebrish-Agent-Skills
+description: 'Diagnose and fix problems with the Hebrish dictation app (hebrish.app) on Linux - the hotkey does nothing, text is not pasted or lands only on the clipboard, no microphone or no level, the model download fails, no tray icon, and APT errors from the Hebrish repository (NO_PUBKEY or signature errors, wrong architecture, unsupported Ubuntu version, package or source missing after a purge). Use when a user reports that Hebrish on Ubuntu or Linux is not working, or an apt command mentions cdn.hebrish.app. Do NOT use for a first install (use install-hebrish-linux) or for Hebrish on Android or Windows.'
+license: MIT
+compatibility: Ubuntu 26.04 (amd64) with APT and sudo; needs a terminal agent that can run shell commands, and network access to cdn.hebrish.app.
 ---
 
 # Troubleshoot Hebrish on Linux

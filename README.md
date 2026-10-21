@@ -59,7 +59,8 @@ cp -r Hebrish-Agent-Skills/skills/* <your-agent-skills-directory>/
 
 ### No agent
 
-Each `SKILL.md` is plain Markdown: you can follow it by hand.
+Each `SKILL.md` is plain Markdown: you can follow it by hand. Each skill folder also has a
+Hebrew version, `SKILL_HE.md`.
 
 ## What gets installed
 

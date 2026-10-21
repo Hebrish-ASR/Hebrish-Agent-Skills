@@ -1,0 +1,25 @@
+# Signed release for the Skills IL "signed_release" check (agentskills.co.il):
+# a v* tag gets a Sigstore build-provenance attestation over the skill files.
+name: Release
+on:
+  push:
+    tags: ['v*']
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/attest-build-provenance@v4
+        with:
+          subject-path: |
+            skills/*/SKILL.md
+            skills/*/SKILL_HE.md
+            skills/*/metadata.json
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" --title "$GITHUB_REF_NAME" --generate-notes skills/*/SKILL.md

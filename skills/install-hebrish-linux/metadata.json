@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "הכתבה",
+      "זיהוי-דיבור",
+      "עברית-באנגלית",
+      "לינוקס",
+      "אובונטו",
+      "התקנה"
+    ],
+    "en": [
+      "dictation",
+      "speech-recognition",
+      "code-switching",
+      "linux",
+      "ubuntu",
+      "install"
+    ]
+  },
+  "display_name": {
+    "he": "התקנת Hebrish בלינוקס",
+    "en": "Install Hebrish on Linux"
+  },
+  "display_description": {
+    "he": "מתקין ומגדיר את Hebrish, אפליקציית הכתבה באנגלית שכותבת נכון מילים בעברית (בתעתיק לטיני, למשל makolet, arnona), על Ubuntu ממאגר ה-APT החתום שלה: בדיקות מקדימות, הוספת המאגר ואימות מפתח החתימה, התקנת החבילה, הגדרה ראשונית (הרשאת קיצור מקשים, בחירת מודל והורדתו), עדכונים והסרה. ההכתבה רצה כולה על המחשב, בלי שרת. השתמשו כשהמשתמש מבקש להתקין, להגדיר, לעדכן או להסיר את Hebrish בלינוקס. אל תשתמשו ל-Hebrish באנדרואיד או בווינדוס, או לתיקון התקנה קיימת.",
+    "en": "Installs and sets up Hebrish, on-device English dictation that writes Hebrew words correctly in romanized form (makolet, arnona), on Ubuntu from its signed APT repository: preflight checks, adding the repository and verifying its signing key, installing the package, first-run setup (hotkey permission, choosing and downloading a model), updates and uninstalling. Use when a user asks to install, set up, update or remove Hebrish on Linux. Do NOT use for Hebrish on Android or Windows, or for fixing an existing install."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

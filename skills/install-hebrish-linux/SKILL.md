@@ -1,10 +1,8 @@
 ---
 name: install-hebrish-linux
-description: Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository - preflight checks, adding the repository and verifying its signing key, installing the hebrish package, first-run setup (hotkey permissions, choosing and downloading a model), how updates arrive, and uninstalling. Use when a user asks to install, set up, update, reinstall or remove Hebrish (or "the Hebrish dictation app") on Ubuntu or another Linux computer.
-metadata:
-  publisher: hebrish.app
-  updated: "2026-10-21"
-  source: https://github.com/Hebrish-ASR/Hebrish-Agent-Skills
+description: 'Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository - preflight checks, adding the repository and verifying its signing key, installing the hebrish package, first-run setup (hotkey permissions, choosing and downloading a model), how updates arrive, and uninstalling. Use when a user asks to install, set up, update, reinstall or remove Hebrish (or "the Hebrish dictation app") on Ubuntu or another Linux computer. Do NOT use for Hebrish on Android or Windows (see hebrish.app/download) or for fixing an existing install (use troubleshoot-hebrish-linux).'
+license: MIT
+compatibility: Ubuntu 26.04 (amd64) with APT and sudo; needs a terminal agent that can run shell commands, and network access to cdn.hebrish.app.
 ---
 
 # Install Hebrish on Linux

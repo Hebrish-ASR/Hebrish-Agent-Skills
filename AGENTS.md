@@ -6,10 +6,20 @@ app.
 
 ## Layout
 
-- `skills/<name>/SKILL.md`: Agent Skills format (YAML frontmatter `name`, `description`,
-  `metadata`; `name` = folder name). Each skill is self-contained, because most agents fetch one
-  raw `SKILL.md` URL and nothing else. Long reference material, if ever needed, goes in
-  `skills/<name>/references/`.
+- `skills/<name>/SKILL.md`: Agent Skills format. Frontmatter is **only** `name` (= folder
+  name), `description` (single-quoted; includes "Use when" and "Do NOT use for"), `license`,
+  `compatibility`. No `metadata:` key: Skills IL (below) requires that, because Claude Desktop
+  rejects it. Each skill is self-contained, because most agents fetch one raw `SKILL.md` URL and
+  nothing else. Long reference material, if ever needed, goes in `skills/<name>/references/`.
+- `skills/<name>/SKILL_HE.md`: Hebrew translation of the body, no frontmatter. Same `##`/`###`
+  headings in the same order, all in Hebrew; code blocks byte-identical to `SKILL.md` and free
+  of Hebrew. **Any change to a `SKILL.md` body goes into its `SKILL_HE.md` in the same commit.**
+- `skills/<name>/metadata.json`: Skills IL metadata (`author`, `version`, `category`
+  `localization`, bilingual `tags` of equal length, `display_name`, `display_description`,
+  `supported_agents`). Bump `version` when the skill changes; this replaced the frontmatter
+  `updated` date on 2026-10-21.
+- `.github/workflows/release.yml`: a `v*` tag creates a GitHub release with a Sigstore
+  provenance attestation (Skills IL `signed_release` signal). Tag after a skill change.
 - `.claude-plugin/marketplace.json` (marketplace `hebrish-agent-skills`) lists one plugin,
   `hebrish`, with `source: "./"` (this repo root); `.claude-plugin/plugin.json` must keep
   `"name": "hebrish"`. Install id: `hebrish@hebrish-agent-skills`. Bump `version` in
@@ -43,8 +53,23 @@ support:
 - Supported release: Ubuntu 26.04 amd64 (python3 3.14 pin in Depends). When a new Ubuntu release
   or architecture is supported, update both skills' support tables and the README.
 
-If any of these change (key rotation, new suite, new arch), update both skills and the README in
-the same commit, and update the `updated` date in each changed skill's frontmatter.
+If any of these change (key rotation, new suite, new arch), update both skills (and their
+`SKILL_HE.md`) and the README in the same commit, and bump `version` in each changed skill's
+`metadata.json`.
+
+## Copies elsewhere
+
+- hebrish.app serves byte-identical copies of each `SKILL.md` at
+  `/.well-known/agent-skills/<name>/SKILL.md` (Hebrish-App repo; README there says how to
+  recompute the `index.json` digest). Copy them over after every change.
+- Skills IL (<https://agentskills.co.il>, GitHub org `skills-il`, run by Yootech) lists skills
+  from this repo, submitted through its form as an external repository. It checks: the
+  `validate-skill.sh` rules
+  (<https://raw.githubusercontent.com/skills-il/developer-tools/master/scripts/validate-skill.sh>;
+  run it on `skills/*/SKILL.md`, it needs PyYAML), `gh skill publish --dry-run`, secret
+  scanning, CodeQL default setup, a signed release and a detected LICENSE
+  (<https://agentskills.co.il/en/guides/github-verification-checklist>). Rules read
+  2026-10-21.
 
 ## Writing rules
 

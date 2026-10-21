@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "הכתבה",
+      "זיהוי-דיבור",
+      "עברית-באנגלית",
+      "לינוקס",
+      "אובונטו",
+      "פתרון-תקלות"
+    ],
+    "en": [
+      "dictation",
+      "speech-recognition",
+      "code-switching",
+      "linux",
+      "ubuntu",
+      "troubleshooting"
+    ]
+  },
+  "display_name": {
+    "he": "פתרון תקלות ב-Hebrish בלינוקס",
+    "en": "Troubleshoot Hebrish on Linux"
+  },
+  "display_description": {
+    "he": "מאבחן ומתקן תקלות באפליקציית ההכתבה Hebrish בלינוקס: קיצור המקשים לא עושה כלום, הטקסט לא מודבק או נשאר רק בלוח ההעתקה, אין מיקרופון או אין קלט, הורדת המודל נכשלת, אין אייקון במגש, ושגיאות APT ממאגר Hebrish (NO_PUBKEY, שגיאות חתימה, ארכיטקטורה או גרסת Ubuntu לא נתמכות). השתמשו כשהמשתמש מדווח ש-Hebrish לא עובד ב-Ubuntu, או כשפקודת apt מזכירה את cdn.hebrish.app. אל תשתמשו להתקנה ראשונה או ל-Hebrish באנדרואיד או בווינדוס.",
+    "en": "Diagnoses and fixes problems with the Hebrish dictation app on Linux: the hotkey does nothing, text is not pasted or lands only on the clipboard, no microphone or no level, the model download fails, no tray icon, and APT errors from the Hebrish repository (NO_PUBKEY, signature errors, unsupported architecture or Ubuntu version). Use when a user reports that Hebrish on Ubuntu is not working, or an apt command mentions cdn.hebrish.app. Do NOT use for a first install or for Hebrish on Android or Windows."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}
