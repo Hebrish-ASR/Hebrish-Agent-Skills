@@ -1,0 +1,14 @@
+{
+  "name": "hebrish",
+  "version": "1.0.0",
+  "description": "Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository, and troubleshoot it: hotkey, paste, microphone, model download and APT errors.",
+  "author": {
+    "name": "Daniel Rosehill",
+    "email": "info@hebrish.app",
+    "url": "https://hebrish.app"
+  },
+  "homepage": "https://hebrish.app",
+  "repository": "https://github.com/Hebrish-ASR/Hebrish-Agent-Skills",
+  "license": "MIT",
+  "keywords": ["hebrish", "dictation", "speech-recognition", "hebrew", "code-switching", "ubuntu", "apt", "installer"]
+}
