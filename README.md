@@ -66,7 +66,7 @@ Each `SKILL.md` is plain Markdown: you can follow it by hand.
 - APT source `/etc/apt/sources.list.d/hebrish.sources` for `https://cdn.hebrish.app/apt`
   (suite `stable`, component `main`, amd64), signed by the key
   `4745 D635 77C8 1400 DBB7  43DF DBD1 F5A2 2CA1 B27B` ("Hebrish APT Repository
-  <info@hebrish.app>"), installed as `/usr/share/keyrings/hebrish-archive-keyring.gpg`.
+  <info@hebrish.app>"), installed as `/etc/apt/keyrings/hebrish-archive-keyring.gpg`.
 - The `hebrish` package and its dependencies from Ubuntu.
 - On first start, the model you choose (Sabich is recommended; about 660 MB, downloaded once).
 

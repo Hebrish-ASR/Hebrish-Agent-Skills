@@ -59,16 +59,16 @@ Show the user these steps, then run them one block at a time (each `sudo` needs 
 
 ```bash
 # 2a. Download the signing keyring
-sudo install -d -m 0755 /usr/share/keyrings
-curl -fsSL https://cdn.hebrish.app/apt/hebrish-archive-keyring.gpg | sudo tee /usr/share/keyrings/hebrish-archive-keyring.gpg >/dev/null
+sudo install -d -m 0755 /etc/apt/keyrings
+curl -fsSL https://cdn.hebrish.app/apt/hebrish-archive-keyring.gpg | sudo tee /etc/apt/keyrings/hebrish-archive-keyring.gpg >/dev/null
 
 # 2b. Verify the fingerprint (no sudo)
-gpg --show-keys /usr/share/keyrings/hebrish-archive-keyring.gpg
+gpg --show-keys /etc/apt/keyrings/hebrish-archive-keyring.gpg
 ```
 
 The output must show `4745D63577C81400DBB743DFDBD1F5A22CA1B27B` and the uid
 `Hebrish APT Repository <info@hebrish.app>`. If it does not, **stop**, delete the file
-(`sudo rm /usr/share/keyrings/hebrish-archive-keyring.gpg`) and report it at
+(`sudo rm /etc/apt/keyrings/hebrish-archive-keyring.gpg`) and report it at
 https://github.com/Hebrish-ASR/Hebrish-App/issues. (An armored copy of the same key is at
 https://cdn.hebrish.app/apt/hebrish-archive-keyring.asc.)
 
@@ -81,7 +81,7 @@ URIs: https://cdn.hebrish.app/apt
 Suites: stable
 Components: main
 Architectures: amd64
-Signed-By: /usr/share/keyrings/hebrish-archive-keyring.gpg
+Signed-By: /etc/apt/keyrings/hebrish-archive-keyring.gpg
 EOF
 
 # 2d. Install
@@ -191,14 +191,15 @@ Show and confirm, then:
 sudo apt purge hebrish    # removes the app, the keyring and the repository's sources file
 ```
 
-`sudo apt remove hebrish` keeps the sources file (a conffile) while the keyring goes with the
-package, so later `apt update` runs complain about the Hebrish source; prefer `purge`. Check for
+`sudo apt remove hebrish` removes the app but keeps the keyring and sources file (both are
+conffiles), so the repository stays configured and a later `apt install hebrish` works again;
+use `purge` to remove those too. Check for
 leftovers (if the repository was added by hand before the package owned these files):
 
 ```bash
-ls /etc/apt/sources.list.d/hebrish.sources /usr/share/keyrings/hebrish-archive-keyring.gpg 2>/dev/null
+ls /etc/apt/sources.list.d/hebrish.sources /etc/apt/keyrings/hebrish-archive-keyring.gpg 2>/dev/null
 # remove any that are listed, with consent:
-# sudo rm /etc/apt/sources.list.d/hebrish.sources /usr/share/keyrings/hebrish-archive-keyring.gpg
+# sudo rm /etc/apt/sources.list.d/hebrish.sources /etc/apt/keyrings/hebrish-archive-keyring.gpg
 ```
 
 User data is not removed by `apt`. Ask before deleting it (this deletes the downloaded models

@@ -35,7 +35,7 @@ support:
 - Repository URL `https://cdn.hebrish.app/apt`, suite `stable`, component `main`, arch `amd64`.
 - Key fingerprint `4745D63577C81400DBB743DFDBD1F5A22CA1B27B`, keyring paths
   `https://cdn.hebrish.app/apt/hebrish-archive-keyring.{gpg,asc}` and
-  `/usr/share/keyrings/hebrish-archive-keyring.gpg`.
+  `/etc/apt/keyrings/hebrish-archive-keyring.gpg`.
 - The `hebrish.sources` block in `install-hebrish-linux` must be byte-identical to
   `desktop/packaging/apt/hebrish.sources`: the package (0.6.2+) ships it as a conffile, and a
   differing file makes dpkg prompt.
