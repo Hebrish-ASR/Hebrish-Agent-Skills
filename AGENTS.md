@@ -70,6 +70,20 @@ If any of these change (key rotation, new suite, new arch), update both skills (
   scanning, CodeQL default setup, a signed release and a detected LICENSE
   (<https://agentskills.co.il/en/guides/github-verification-checklist>). Rules read
   2026-10-21.
+- **Submitted 2026-10-21**, both skills, through <https://agentskills.co.il/en/submit>, tab
+  "I Already Have a Skill" (needs Sign in with GitHub; the `skills-il` OAuth app, email
+  read-only, is authorized on `danielrosehill`). One submission per skill: paste the skill
+  *folder* URL (`.../tree/main/skills/<name>`), "Fetch SKILL.md", then fill the form. Values
+  used: category Localization, creator `danielrosehill`, email info@hebrish.app, the eight
+  agents in `metadata.json`, Hebrew name/description/tags copied from `metadata.json`. Status:
+  awaiting their review.
+- What the form actually does (observed 2026-10-21): it does **not** read `metadata.json`; it
+  suggests `metadata.display_name.he` etc. in the frontmatter, which their own creator skill
+  forbids. Ignore that hint and type the Hebrew fields in. Its repo checks reported 1/5
+  (only the licence) although secret scanning, push protection, CodeQL default setup (language
+  `actions`, first analysis 18:46 UTC) and a v1.1.1 attestation were all confirmed through the
+  GitHub API; "spec compliant" showed as pending. The form still accepted the submission. If
+  the review asks about these, point them at the repo settings and the v1.1.1 release.
 
 ## Writing rules
 
