@@ -3,7 +3,7 @@
 Skills that let an AI agent install, set up and troubleshoot [Hebrish](https://hebrish.app) for
 you: on-device English dictation that writes Hebrew words correctly, in romanized form
 (makolet, arnona, teudat zehut). Hebrish runs fine-tuned NVIDIA Parakeet models on your own
-computer with sherpa-onnx; nothing is sent to a server. It is a one-person, not-for-profit
+computer with sherpa-onnx; nothing is sent to a server. It is a one-person
 project by Daniel Rosehill.
 
 The skills use the open [Agent Skills](https://agentskills.io) format (a folder with a

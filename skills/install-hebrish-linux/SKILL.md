@@ -9,7 +9,7 @@ compatibility: Ubuntu 26.04 (amd64) with APT and sudo; needs a terminal agent th
 
 Hebrish is on-device English dictation that writes Hebrew words in romanized form correctly
 (code-switching): fine-tuned NVIDIA Parakeet models run on the CPU with sherpa-onnx. It is a
-one-person, not-for-profit project by Daniel Rosehill. The Linux app is the `hebrish` package:
+one-person project by Daniel Rosehill. The Linux app is the `hebrish` package:
 a window plus a tray icon; press a hotkey, talk, and the text is pasted at the cursor.
 
 ## Rules for the agent

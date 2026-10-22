@@ -87,6 +87,6 @@ If any of these change (key rotation, new suite, new arch), update both skills (
 
 ## Writing rules
 
-- Hebrish is Daniel Rosehill's one-person, not-for-profit project: never "we"/"our".
+- Hebrish is Daniel Rosehill's one-person project: never "we"/"our", never "non-profit" or "not-for-profit" (Daniel, 2026-10-22).
 - The skills tell the agent to show and ask before every `sudo` command; keep that.
 - Unknown problems go to https://github.com/Hebrish-ASR/Hebrish-App/issues, not to guesses.

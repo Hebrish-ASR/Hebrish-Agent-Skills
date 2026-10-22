@@ -7,7 +7,7 @@ compatibility: Ubuntu 26.04 (amd64) with APT and sudo; needs a terminal agent th
 
 # Troubleshoot Hebrish on Linux
 
-Hebrish is Daniel Rosehill's one-person, not-for-profit dictation app (hebrish.app). The Linux
+Hebrish is Daniel Rosehill's one-person dictation app (hebrish.app). The Linux
 app is the `hebrish` package; settings are in `~/.config/hebrish/config.json`, models, history
 and state in `~/.local/share/hebrish/`, and the log goes to stderr.
 
