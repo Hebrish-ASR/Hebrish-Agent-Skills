@@ -53,11 +53,11 @@ hebrish-model status
 ## הטקסט לא מודבק
 
 איך זה עובד: האפליקציה שמה את הטקסט בלוח ההעתקה, ואז שולחת Ctrl+V דרך מקלדת וירטואלית
-ב-`/dev/uinput` (בשם `hebrish-keyboard`). כל הקלטה מופיעה גם בתיבת הטקסט של הלשונית
-Dictate.
+ב-`/dev/uinput` (בשם `hebrish-keyboard`). כל הקלטה נשמרת גם בלשונית History.
 
-1. **מצב הפלט.** בלשונית Dictate, השדה Output חייב להיות *Paste at the cursor* (ברירת המחדל).
-   *Clipboard only* ו-*This window's text box only* לא מדביקים, וזה מכוון.
+1. **מתגי הפלט.** בלשונית Dictate, תחת Output, הכפתור *At the cursor* חייב להיות פעיל (ירוק;
+   ברירת המחדל). *Clipboard* ו-*This window* לבדם לא מדביקים, וזה מכוון. עד גרסה 0.8.0 אותה
+   הגדרה הייתה רשימה: *Paste at the cursor*, *Clipboard only*, *This window's text box only*.
 2. **פס ההודעה "Cannot open /dev/uinput (...); transcripts go to the clipboard only".** החבילה
    כוללת את כלל ה-udev `/usr/lib/udev/rules.d/70-hebrish-uinput.rules`, שמעניק למשתמש המחובר
    לעמדה גישה ל-`/dev/uinput` (`uaccess`). לוודא שהכלל קיים ולטעון אותו מחדש, באישור המשתמש:

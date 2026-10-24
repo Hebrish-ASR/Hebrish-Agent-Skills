@@ -60,11 +60,11 @@ of the window: the app reports hotkey and paste problems there about 4 s after s
 ## Text is not pasted
 
 How it works: the app puts the text on the clipboard, then sends Ctrl+V through a virtual
-keyboard on `/dev/uinput` (named `hebrish-keyboard`). Every take also appears in the Dictate
-tab's text box.
+keyboard on `/dev/uinput` (named `hebrish-keyboard`). Every take is also in the History tab.
 
-1. **Output mode.** Dictate tab → Output must be *Paste at the cursor* (the default). *Clipboard
-   only* and *This window's text box only* do not paste by design.
+1. **Output switches.** Dictate tab → Output: the *At the cursor* button must be on (green; the
+   default). *Clipboard* and *This window* alone do not paste, by design. Up to version 0.8.0 the
+   same setting was a list: *Paste at the cursor*, *Clipboard only*, *This window's text box only*.
 2. **Banner "Cannot open /dev/uinput (...); transcripts go to the clipboard only".** The package
    ships the udev rule `/usr/lib/udev/rules.d/70-hebrish-uinput.rules`, which grants the logged-in
    seat user access to `/dev/uinput` (`uaccess`). Check it is there and reload it, with consent:
