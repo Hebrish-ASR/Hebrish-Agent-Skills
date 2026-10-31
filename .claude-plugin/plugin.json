@@ -1,7 +1,7 @@
 {
   "name": "hebrish",
-  "version": "1.2.0",
-  "description": "Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository, troubleshoot it (hotkey, paste, microphone, model download and APT errors), and transcribe audio files on the computer through the desktop app's local API.",
+  "version": "1.3.0",
+  "description": "Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository, troubleshoot it (hotkey, paste, microphone, model download and APT errors), and transcribe audio files on the computer through the desktop app's local API, and install Hebrish on an Android phone over adb (sideload the latest APK, or set up the Hebrish F-Droid repository).",
   "author": {
     "name": "Daniel Rosehill",
     "email": "info@hebrish.app",
@@ -20,6 +20,9 @@
     "apt",
     "installer",
     "transcription",
-    "local-api"
+    "local-api",
+    "android",
+    "adb",
+    "f-droid"
   ]
 }

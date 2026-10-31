@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "הכתבה",
+      "זיהוי-דיבור",
+      "עברית-באנגלית",
+      "אנדרואיד",
+      "adb",
+      "התקנה"
+    ],
+    "en": [
+      "dictation",
+      "speech-recognition",
+      "code-switching",
+      "android",
+      "adb",
+      "sideload"
+    ]
+  },
+  "display_name": {
+    "he": "התקנת Hebrish באנדרואיד דרך adb (Sideload)",
+    "en": "Sideload Hebrish onto Android"
+  },
+  "display_description": {
+    "he": "מתקין או מעדכן את אפליקציית Hebrish לאנדרואיד (הכתבה באנגלית שכותבת נכון מילים בעברית בתעתיק לטיני, למשל makolet, arnona) על טלפון שהמשתמש בוחר, מהמחשב דרך adb: בחירת המכשיר (USB או ניפוי באגים אלחוטי), בדיקה שהוא מתאים, הורדת קובץ ה-APK האחרון מ-cdn.hebrish.app ואימות ה-SHA-256 שלו, התקנה עם adb install -r ודיווח על הגרסה שהותקנה. השתמשו כשהמשתמש מבקש להתקין או לעדכן את Hebrish בטלפון אנדרואיד דרך adb. אל תשתמשו להוספת מאגר ה-F-Droid של Hebrish או ל-Hebrish בלינוקס.",
+    "en": "Installs or updates the Hebrish Android app (on-device English dictation that writes Hebrew words correctly in romanized form, such as makolet, arnona) on the phone the user chooses, from a computer over adb: picking the device (USB or wireless debugging), checking it can run Hebrish, downloading the latest APK from cdn.hebrish.app and verifying its SHA-256, installing with adb install -r, and reporting the installed version. Use when a user asks to sideload, install or update Hebrish on an Android phone with adb. Do NOT use for adding the Hebrish F-Droid repository or for Hebrish on Linux."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

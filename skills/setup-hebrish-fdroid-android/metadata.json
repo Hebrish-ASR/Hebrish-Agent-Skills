@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "הכתבה",
+      "זיהוי-דיבור",
+      "עברית-באנגלית",
+      "אנדרואיד",
+      "f-droid",
+      "adb"
+    ],
+    "en": [
+      "dictation",
+      "speech-recognition",
+      "code-switching",
+      "android",
+      "f-droid",
+      "adb"
+    ]
+  },
+  "display_name": {
+    "he": "הגדרת מאגר ה-F-Droid של Hebrish דרך adb",
+    "en": "Set up the Hebrish F-Droid repository"
+  },
+  "display_description": {
+    "he": "מגדיר מהמחשב, דרך adb, את מאגר ה-F-Droid של Hebrish בטלפון אנדרואיד, כך ש-Hebrish (הכתבה באנגלית שכותבת נכון מילים בעברית בתעתיק לטיני) מותקנת ומתעדכנת אוטומטית: בחירת המכשיר, התקנת F-Droid אם חסר (עם אימות החותם), פתיחת קישור המאגר עם טביעת האצבע שלו ב-F-Droid, פתיחת דף Hebrish להתקנה ובדיקת התוצאה. השתמשו כשהמשתמש מבקש להוסיף את מאגר ה-F-Droid של Hebrish או להתקין את Hebrish בדרך המומלצת. אל תשתמשו להתקנת APK חד-פעמית או ל-Hebrish בלינוקס.",
+    "en": "Sets up the Hebrish F-Droid repository on an Android phone from a computer over adb, so Hebrish (on-device English dictation that writes Hebrew words correctly in romanized form) installs and updates automatically: picking the device, installing the F-Droid client if missing (verifying its signer), opening the repository link with its fingerprint in F-Droid, opening the Hebrish page to install, and confirming the result. Use when a user asks to add the Hebrish F-Droid repo or install Hebrish the recommended way on Android. Do NOT use for a one-off APK install or for Hebrish on Linux."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

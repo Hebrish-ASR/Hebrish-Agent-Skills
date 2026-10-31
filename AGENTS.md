@@ -1,6 +1,6 @@
 # AGENTS.md (maintainers)
 
-Public skills for installing and troubleshooting the Hebrish desktop app on Linux. Readers are
+Public skills for installing and troubleshooting the Hebrish desktop app on Linux, and (2026-10-31) for installing the Android app over adb (`sideload-hebrish-android`, `setup-hebrish-fdroid-android`). Readers are
 end users' agents, so every command must be runnable as written and every claim must match the
 app.
 
@@ -42,6 +42,16 @@ support:
 - For `transcribe-with-hebrish`: `desktop/hebrish/local_api.py` (endpoints, port, guards) and
   `desktop/docs/maintaining.md`, "Local API". Its port (8723), endpoint paths and
   `response_format` values must match that file.
+
+- For the Android skills: Hebrish-App `android/app/build.gradle.kts` (package, minSdk 28,
+  arm64-v8a), `cdn.hebrish.app/downloads/latest.json` `files.android`, and Hebrish-FDroid
+  `README.md` (repository URL, repository key fingerprint
+  `EF8C2D63D994A10CD489A978585510B47E47452EC09248591CB2C0F39C2BC1FA`, APK signing certificate
+  `5cf6822350d0b2ff124021a0df10bec1c63a6e5e6159fa6029507134a1446994`). Checked on 2026-10-31
+  against the files themselves: `apksigner verify --print-certs` on Hebrish-v1.010.apk and on
+  `f-droid.org/F-Droid.apk` (2.0.2, `43238d512c1e5eb2d6569f4a3afbf5523418b82e0a3ed1552770abb9a9c9ccab`),
+  `keytool -printcert -jarfile` on `fdroid.hebrish.app/repo/index-v1.jar`. The adb steps were
+  not yet run against a phone when written.
 
 ## Must stay in sync with the APT repository
 
