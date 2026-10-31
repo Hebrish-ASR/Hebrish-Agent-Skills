@@ -1,6 +1,6 @@
 {
   "name": "hebrish-agent-skills",
-  "description": "Agent skills for installing, setting up and troubleshooting the Hebrish dictation app (hebrish.app).",
+  "description": "Agent skills for installing, setting up and troubleshooting the Hebrish dictation app (hebrish.app), and for transcribing audio files with it locally.",
   "owner": {
     "name": "Daniel Rosehill",
     "email": "info@hebrish.app"
@@ -9,7 +9,7 @@
     {
       "name": "hebrish",
       "source": "./",
-      "description": "Install and set up the Hebrish dictation app on Linux (signed APT repository, first-run setup, updates, uninstall), and troubleshoot it.",
+      "description": "Install and set up the Hebrish dictation app on Linux (signed APT repository, first-run setup, updates, uninstall), troubleshoot it, and transcribe audio files through its local API.",
       "category": "productivity"
     }
   ]

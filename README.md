@@ -16,6 +16,7 @@ skills, or with any agent that can read a web page.
 | --- | --- |
 | [`install-hebrish-linux`](skills/install-hebrish-linux/SKILL.md) | Checks the system, adds the signed Hebrish APT repository (verifying its key), installs the `hebrish` package, walks through first-run setup (hotkey permission, choosing and downloading a model, hotkey), explains updates, and uninstalls. |
 | [`troubleshoot-hebrish-linux`](skills/troubleshoot-hebrish-linux/SKILL.md) | Fixes the common problems: hotkey does nothing, text not pasted, no microphone, model download fails, no tray icon, APT errors. |
+| [`transcribe-with-hebrish`](skills/transcribe-with-hebrish/SKILL.md) | Transcribes audio files (one, or a folder) on this computer through the Hebrish desktop app's local API (Settings → Local API, `http://127.0.0.1:8723`, OpenAI-compatible, no key, nothing leaves the machine). |
 
 **Supported:** Ubuntu 26.04 (amd64). Other Linux distributions and versions are not supported yet;
 see [hebrish.app/download](https://hebrish.app/download) for every platform, including Android
@@ -35,6 +36,12 @@ If something does not work afterwards:
 
 ```text
 Hebrish isn't working on this computer. Troubleshoot it using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/troubleshoot-hebrish-linux/SKILL.md
+```
+
+To transcribe recordings on this computer with Hebrish (the desktop app, with Settings → Local API on):
+
+```text
+Transcribe /path/to/recording.mp3 with Hebrish using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/transcribe-with-hebrish/SKILL.md
 ```
 
 ### Claude Code

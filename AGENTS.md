@@ -39,6 +39,9 @@ support:
   (`DEFAULTS`, paths), `shared/catalogue.json` (models; the desktop app runs only engine
   `sherpa_offline_transducer`; `recommended` is `sabich`).
 - hebrish.app `download.html` (#ubuntu) for the public wording.
+- For `transcribe-with-hebrish`: `desktop/hebrish/local_api.py` (endpoints, port, guards) and
+  `desktop/docs/maintaining.md`, "Local API". Its port (8723), endpoint paths and
+  `response_format` values must match that file.
 
 ## Must stay in sync with the APT repository
 

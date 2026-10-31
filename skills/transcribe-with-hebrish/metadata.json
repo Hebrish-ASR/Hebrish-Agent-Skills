@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "תמלול",
+      "זיהוי-דיבור",
+      "עברית-באנגלית",
+      "מקומי",
+      "הקלטות",
+      "API"
+    ],
+    "en": [
+      "transcription",
+      "speech-recognition",
+      "code-switching",
+      "local",
+      "recordings",
+      "api"
+    ]
+  },
+  "display_name": {
+    "he": "תמלול עם Hebrish",
+    "en": "Transcribe with Hebrish"
+  },
+  "display_description": {
+    "he": "מתמלל קובצי שמע (הודעות קוליות, הקלטות, פגישות; mp3, wav, m4a, ogg, flac וכל מה ש-ffmpeg קורא) על המחשב עם אפליקציית Hebrish לשולחן העבודה (hebrish.app), דרך ה-API המקומי שלה בכתובת http://127.0.0.1:8723: נקודת קצה תואמת OpenAI, בלי מפתח, ושום דבר לא יוצא מהמחשב. אנגלית שבה מילים בעברית נכתבות נכון בתעתיק לטיני (makolet, arnona). השתמשו כשהמשתמש מבקש לתמלל קובץ שמע או תיקיית הקלטות באופן מקומי, עם Hebrish, או בלי שירות ענן. אל תשתמשו להכתבה חיה לתוך אפליקציות (זה קיצור המקשים של Hebrish), להתקנת Hebrish (השתמשו ב-install-hebrish-linux), או לשמע שכולו בעברית.",
+    "en": "Transcribes audio files (voice notes, recordings, meetings; mp3, wav, m4a, ogg, flac and anything ffmpeg reads) on this computer with the Hebrish desktop app (hebrish.app) through its local API at http://127.0.0.1:8723, an OpenAI-compatible endpoint that needs no key and sends nothing off the machine. English with Hebrew words written correctly in romanized form (makolet, arnona). Use when a user asks to transcribe an audio file or folder of recordings locally, with Hebrish, or without a cloud service. Do NOT use for live dictation into apps (that is the Hebrish hotkey), for installing Hebrish (use install-hebrish-linux), or for audio that is entirely in Hebrew."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}
