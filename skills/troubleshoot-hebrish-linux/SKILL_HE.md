@@ -1,6 +1,6 @@
 # פתרון תקלות ב-Hebrish על Linux
 
-Hebrish היא אפליקציית הכתבה של Daniel Rosehill, פרויקט של אדם אחד ללא מטרות רווח (hebrish.app). אפליקציית
+Hebrish היא אפליקציית הכתבה של Daniel Rosehill, פרויקט אישי (hebrish.app). אפליקציית
 ה-Linux היא החבילה `hebrish`; ההגדרות נמצאות ב-`~/.config/hebrish/config.json`, המודלים, ההיסטוריה
 והמצב ב-`~/.local/share/hebrish/`, והיומן נכתב ל-stderr.
 

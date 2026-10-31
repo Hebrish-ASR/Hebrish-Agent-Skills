@@ -7,7 +7,7 @@ compatibility: The Hebrish desktop app (Ubuntu or Windows) with Settings, Local 
 
 # Transcribe with Hebrish
 
-Hebrish is Daniel Rosehill's one-person dictation app (hebrish.app). Its desktop app can serve
+Hebrish is Daniel Rosehill's dictation app, a personal project (hebrish.app). Its desktop app can serve
 the model it has loaded as a **local API**: a program on the same computer posts an audio file
 and gets the text back. Nothing leaves the computer and there is no API key. The output is
 English with Hebrew words in romanized form (*makolet*, *arnona*), never Hebrew script.
