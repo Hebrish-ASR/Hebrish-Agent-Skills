@@ -108,7 +108,7 @@ Downloads come from cdn.hebrish.app (Hugging Face for the stock model), are abou
    the folder chosen under Models tab → *Change folder…*), or choose another folder there.
 2. **"SHA-256 mismatch"** or **"size ... != ..."**: a corrupted or cut-off transfer. Retry the
    download; the partial file is not used.
-3. **Network errors / timeouts:** check `curl -fsSI https://cdn.hebrish.app/models/parakeet-sabich/latest.json`
+3. **Network errors / timeouts:** check `curl -fsSI https://cdn.hebrish.app/models/sabich/latest.json`
    returns HTTP 200 from this machine (proxies and firewalls), then retry.
 4. **CLI for a clearer error:** `hebrish-model check sabich` then `hebrish-model download sabich`
    prints progress and the exact error. `hebrish-model use sabich` selects it; restart the app.

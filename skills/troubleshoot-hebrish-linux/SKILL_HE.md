@@ -101,7 +101,7 @@ hebrish-model status
    בתיקייה שנבחרה בלשונית Models → *Change folder…*), או לבחור שם תיקייה אחרת.
 2. **"SHA-256 mismatch"** או **"size ... != ..."**: העברה פגומה או קטועה. לנסות שוב את
    ההורדה; הקובץ החלקי לא נמצא בשימוש.
-3. **שגיאות רשת / פסקי זמן:** לבדוק ש-`curl -fsSI https://cdn.hebrish.app/models/parakeet-sabich/latest.json`
+3. **שגיאות רשת / פסקי זמן:** לבדוק ש-`curl -fsSI https://cdn.hebrish.app/models/sabich/latest.json`
    מחזיר HTTP 200 מהמחשב הזה (שרתי פרוקסי וחומות אש), ואז לנסות שוב.
 4. **שורת הפקודה לשגיאה ברורה יותר:** `hebrish-model check sabich` ואז `hebrish-model download sabich`
    מדפיסים את ההתקדמות ואת השגיאה המדויקת. `hebrish-model use sabich` בוחר בו; להפעיל מחדש את האפליקציה.
