@@ -17,6 +17,9 @@ skills, or with any agent that can read a web page.
 | [`install-hebrish-linux`](skills/install-hebrish-linux/SKILL.md) | Checks the system, adds the signed Hebrish APT repository (verifying its key), installs the `hebrish` package, walks through first-run setup (hotkey permission, choosing and downloading a model, hotkey), explains updates, and uninstalls. |
 | [`troubleshoot-hebrish-linux`](skills/troubleshoot-hebrish-linux/SKILL.md) | Fixes the common problems: hotkey does nothing, text not pasted, no microphone, model download fails, no tray icon, APT errors. |
 | [`transcribe-with-hebrish`](skills/transcribe-with-hebrish/SKILL.md) | Transcribes audio files (one, or a folder) on this computer through the Hebrish desktop app's local API (Settings → Local API, `http://127.0.0.1:8723`, OpenAI-compatible, no key, nothing leaves the machine). |
+| [`update-hebrish`](skills/update-hebrish/SKILL.md) | Checks for and installs updates to the desktop app and its models, and switches model, through the local API. |
+| [`read-hebrish-history`](skills/read-hebrish-history/SKILL.md) | Reads, searches and exports the desktop app's transcript history through the local API. |
+| [`fix-hebrish-mistranscriptions`](skills/fix-hebrish-mistranscriptions/SKILL.md) | Finds what the desktop app keeps getting wrong, tests find-and-replace rules against real transcript history, and adds them to the personal dictionary. |
 | [`sideload-hebrish-android`](skills/sideload-hebrish-android/SKILL.md) | Sideload: installs or updates the latest Hebrish APK on the Android phone you name, over adb (USB or wireless debugging), checking the download's SHA-256 and reporting the installed version. |
 | [`setup-hebrish-fdroid-android`](skills/setup-hebrish-fdroid-android/SKILL.md) | Sets up the Hebrish F-Droid repository on an Android phone over adb (installing F-Droid if needed), so Hebrish installs and updates automatically. You confirm the prompts on the phone. |
 
@@ -45,6 +48,14 @@ To transcribe recordings on this computer with Hebrish (the desktop app, with Se
 ```text
 Transcribe /path/to/recording.mp3 with Hebrish using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/transcribe-with-hebrish/SKILL.md
 ```
+
+To fix a word or phrase Hebrish keeps getting wrong (the desktop app, a version later than 1.017, with Settings → Local API and its control option on):
+
+```text
+Hebrish keeps writing "My Word Prompts" for "My Weird Prompts". Fix it using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/fix-hebrish-mistranscriptions/SKILL.md
+```
+
+The desktop app also installs its skills itself: Settings → Local API → Install agent skills, or `hebrish --install-agent-skills`.
 
 To install Hebrish on an Android phone from this computer over adb (USB debugging or wireless debugging on):
 

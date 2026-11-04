@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "מילון-אישי",
+      "חיפוש-והחלפה",
+      "תיקון-תמלול",
+      "זיהוי-דיבור",
+      "מקומי",
+      "API"
+    ],
+    "en": [
+      "personal-dictionary",
+      "find-and-replace",
+      "transcription-fixes",
+      "speech-recognition",
+      "local",
+      "api"
+    ]
+  },
+  "display_name": {
+    "he": "תיקון טעויות תמלול של Hebrish",
+    "en": "Fix Hebrish mistranscriptions"
+  },
+  "display_description": {
+    "he": "מוצא מילים וביטויים שאפליקציית Hebrish לשולחן העבודה (hebrish.app) טועה בהם שוב ושוב, ומוסיף להם כללי חיפוש והחלפה למילון האישי דרך ה-API המקומי בכתובת http://127.0.0.1:8723, אחרי שבדק כל כלל מול היסטוריית התמלילים האמיתית של המשתמש. מטפל בשמות, מותגים וביטויים של כמה מילים. השתמשו כשהמשתמש אומר ש-Hebrish שומעת או מאייתת משהו לא נכון, מבקש להוסיף החלפה או מילה למילון, או מבקש למצוא טעויות חוזרות. אל תשתמשו לטעות חד-פעמית בתמליל אחד, למילים שהמודל לא מפיק בכלל, או לאפליקציית Android.",
+    "en": "Finds words and phrases the Hebrish desktop app (hebrish.app) keeps getting wrong and adds find-and-replace rules to its personal dictionary through the local API at http://127.0.0.1:8723, testing each rule against the user's real transcript history first. Handles names, brands and multi-word phrases. Use when a user says Hebrish keeps mishearing or misspelling something, asks to add a replacement or dictionary word, or asks to find recurring errors. Do NOT use for one-off typos in a single transcript, for words the model never produces at all, or for the Android app."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

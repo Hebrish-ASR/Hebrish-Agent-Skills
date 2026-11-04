@@ -1,0 +1,39 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "עדכון",
+      "זיהוי-דיבור",
+      "מודלים",
+      "מקומי",
+      "API"
+    ],
+    "en": [
+      "update",
+      "speech-recognition",
+      "models",
+      "local",
+      "api"
+    ]
+  },
+  "display_name": {
+    "he": "עדכון Hebrish",
+    "en": "Update Hebrish"
+  },
+  "display_description": {
+    "he": "בודק ומתקין עדכונים לאפליקציית Hebrish לשולחן העבודה (hebrish.app) ולמודלי הדיבור שהורדו, דרך ה-API המקומי שלה בכתובת http://127.0.0.1:8723, ומחליף מודל. השתמשו כשהמשתמש מבקש לעדכן את Hebrish, לבדוק אם היא או המודלים מעודכנים, לדעת איזה מודל פועל, או להחליף מודל. אל תשתמשו להתקנה ראשונה (install-hebrish-linux), לאפליקציה שלא עולה או לשדרוג APT שנכשל (troubleshoot-hebrish-linux), או לאפליקציית Android.",
+    "en": "Checks for and installs updates to the Hebrish desktop app (hebrish.app) and its downloaded speech models through the app's local API at http://127.0.0.1:8723, and switches model. Use when a user asks to update Hebrish, whether it or its models are up to date, which model is running, or to change model. Do NOT use for a first install (install-hebrish-linux), for an app that will not start or a failing APT upgrade (troubleshoot-hebrish-linux), or for the Android app."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

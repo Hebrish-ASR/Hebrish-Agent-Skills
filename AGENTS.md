@@ -42,6 +42,10 @@ support:
 - For `transcribe-with-hebrish`: `desktop/hebrish/local_api.py` (endpoints, port, guards) and
   `desktop/docs/maintaining.md`, "Local API". Its port (8723), endpoint paths and
   `response_format` values must match that file.
+- For `update-hebrish`, `read-hebrish-history` and `fix-hebrish-mistranscriptions`: the same file's
+  `ROUTES` and `desktop/hebrish/ui/api_control.py` (reply fields), `shared/personal-dictionary.md`
+  (matching rules) and `desktop/docs/maintaining.md`, "Local API". They need a desktop version later
+  than 1.017 (control endpoints, B-87); change that wording when the release number is known.
 
 - For the Android skills: Hebrish-App `android/app/build.gradle.kts` (package, minSdk 28,
   arm64-v8a), `cdn.hebrish.app/downloads/latest.json` `files.android`, and Hebrish-FDroid
@@ -72,6 +76,10 @@ If any of these change (key rotation, new suite, new arch), update both skills (
 
 ## Copies elsewhere
 
+- The desktop app ships `transcribe-with-hebrish`, `update-hebrish`, `read-hebrish-history` and
+  `fix-hebrish-mistranscriptions` in `desktop/hebrish/data/agent-skills/<name>/SKILL.md` (Hebrish-App
+  repo; `tests/test_agent_skills.py` checks each URL path against the API's routes). Copy them over
+  after every change.
 - hebrish.app serves byte-identical copies of each `SKILL.md` at
   `/.well-known/agent-skills/<name>/SKILL.md` (Hebrish-App repo; README there says how to
   recompute the `index.json` digest). Copy them over after every change.

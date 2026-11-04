@@ -1,0 +1,41 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "היסטוריה",
+      "תמלול",
+      "חיפוש",
+      "ייצוא",
+      "מקומי",
+      "API"
+    ],
+    "en": [
+      "history",
+      "transcription",
+      "search",
+      "export",
+      "local",
+      "api"
+    ]
+  },
+  "display_name": {
+    "he": "קריאת ההיסטוריה של Hebrish",
+    "en": "Read Hebrish history"
+  },
+  "display_description": {
+    "he": "קורא, מחפש ומייצא את מה שהמשתמש הכתיב מהיסטוריית התמלילים של אפליקציית Hebrish לשולחן העבודה (hebrish.app), דרך ה-API המקומי שלה בכתובת http://127.0.0.1:8723. שום דבר לא יוצא מהמחשב אלא אם המשתמש מבקש. השתמשו כשהמשתמש שואל מה הכתיב, רוצה למצוא או לשחזר משהו שאמר, לייצא או לסכם תמלילים, או לקבל נתוני הכתבה. אל תשתמשו לתמלול קובץ שמע (transcribe-with-hebrish), לתיקון טעויות חוזרות (fix-hebrish-mistranscriptions), או לאפליקציית Android.",
+    "en": "Reads, searches and exports what the user dictated from the Hebrish desktop app's transcript history (hebrish.app) through its local API at http://127.0.0.1:8723. Nothing leaves the computer unless the user asks. Use when a user asks what they dictated, to find or recover something they said, to export or summarise transcripts, or for dictation stats. Do NOT use for transcribing an audio file (transcribe-with-hebrish), for correcting recurring errors (fix-hebrish-mistranscriptions), or for the Android app."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}
