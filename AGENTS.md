@@ -44,8 +44,8 @@ support:
   `response_format` values must match that file.
 - For `update-hebrish`, `read-hebrish-history` and `fix-hebrish-mistranscriptions`: the same file's
   `ROUTES` and `desktop/hebrish/ui/api_control.py` (reply fields), `shared/personal-dictionary.md`
-  (matching rules) and `desktop/docs/maintaining.md`, "Local API". They need a desktop version later
-  than 1.017 (control endpoints, B-87); change that wording when the release number is known.
+  (matching rules) and `desktop/docs/maintaining.md`, "Local API". They need desktop 1.018 or later
+  (control endpoints, B-87).
 
 - For the Android skills: Hebrish-App `android/app/build.gradle.kts` (package, minSdk 28,
   arm64-v8a), `cdn.hebrish.app/downloads/latest.json` `files.android`, and Hebrish-FDroid

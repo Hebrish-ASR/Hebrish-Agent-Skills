@@ -49,7 +49,7 @@ To transcribe recordings on this computer with Hebrish (the desktop app, with Se
 Transcribe /path/to/recording.mp3 with Hebrish using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/transcribe-with-hebrish/SKILL.md
 ```
 
-To fix a word or phrase Hebrish keeps getting wrong (the desktop app, a version later than 1.017, with Settings → Local API and its control option on):
+To fix a word or phrase Hebrish keeps getting wrong (the desktop app, 1.018 or later, with Settings → Local API and its control option on):
 
 ```text
 Hebrish keeps writing "My Word Prompts" for "My Weird Prompts". Fix it using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/fix-hebrish-mistranscriptions/SKILL.md
