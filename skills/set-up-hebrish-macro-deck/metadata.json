@@ -1,0 +1,39 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "הכתבה",
+      "זיהוי-דיבור",
+      "מקרו",
+      "לחיצה-לדיבור",
+      "API"
+    ],
+    "en": [
+      "dictation",
+      "speech-recognition",
+      "macro-deck",
+      "push-to-talk",
+      "api"
+    ]
+  },
+  "display_name": {
+    "he": "Macro Deck להיבריש",
+    "en": "Macro Deck for Hebrish"
+  },
+  "display_description": {
+    "he": "מגדיר דק של Macro Deck 3 (טלפון, טאבלט או דפדפן כלוח כפתורים) ששולט באפליקציית היבריש לשולחן העבודה (hebrish.app) דרך ה-API המקומי שלה בכתובת http://127.0.0.1:8723: החזקה לדיבור, הקשה להתחלה ולעצירה, עצירה, ומעבר בין המודלים Sabich, Shakshuka ו-Falafel. השתמשו כשהמשתמש מבקש Macro Deck, סטרים דק, מקרופד או שלט בטלפון להכתבה בהיבריש. אל תשתמשו להתקנת היבריש עצמה (install-hebrish-linux), להתקנת Macro Deck עצמה, או למקלדת היבריש ל-Android.",
+    "en": "Sets up a Macro Deck 3 deck (a phone, tablet or browser as a button pad) that controls the Hebrish desktop app (hebrish.app) through its local API at http://127.0.0.1:8723: hold to talk, tap to start and stop, stop, and switching between the Sabich, Shakshuka and Falafel models. Use when a user asks for Macro Deck, a stream deck, macropad or phone remote for Hebrish dictation. Do NOT use for installing Hebrish itself (install-hebrish-linux), for installing Macro Deck itself, or for the Hebrish Android keyboard."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}

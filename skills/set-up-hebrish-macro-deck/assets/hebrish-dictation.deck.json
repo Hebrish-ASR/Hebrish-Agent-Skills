@@ -1,0 +1,67 @@
+{
+  "spec": 1,
+  "name": "Hebrish Dictation",
+  "about": "Macro Deck 3 deck that controls the Hebrish desktop app (hebrish.app) through its local API on http://127.0.0.1:8723. Every button is one HTTP request sent by the Macro Deck host on the same computer, so it works without window focus and on Wayland. Needs Hebrish desktop 1.018 or later with Settings, Local API: both switches on.",
+  "profile": "Hebrish Dictation",
+  "folder": "Home",
+  "rows": 4,
+  "columns": 2,
+  "api": "http://127.0.0.1:8723",
+  "icons": {
+    "pack": "MDI-Icons (Macro Deck Store, com.simplyjames.mdi-icons)",
+    "note": "icon is the Material Design Icons name. Look up the icon id on the target host in ${XDG_DATA_HOME:-$HOME/.local/share}/MacroDeck/data/icons/packs/*/pack.json (pack name MDI-Icons, icons[].name). Without that pack, leave the icon out."
+  },
+  "style": {
+    "labelColor": "#ffffff",
+    "labelPosition": "bottom",
+    "iconColor": "#ffffff",
+    "iconDisplay": {"fit": "contain", "zoom": 55, "offsetX": 0, "offsetY": -12, "opacity": 100}
+  },
+  "buttons": [
+    {
+      "label": "Sabich",
+      "at": {"row": 0, "col": 0}, "width": 1,
+      "color": "#163a31", "icon": "account-voice",
+      "does": "Switch to Sabich, the everyday English-with-Hebrew model.",
+      "flows": [{"trigger": "onShortPress", "method": "POST", "path": "/v1/app/models/select", "body": {"id": "sabich-rolling", "download": false}}]
+    },
+    {
+      "label": "Shakshuka",
+      "at": {"row": 0, "col": 1}, "width": 1,
+      "color": "#163a31", "icon": "waveform",
+      "does": "Switch to Shakshuka, the streaming model (text appears while you speak).",
+      "flows": [{"trigger": "onShortPress", "method": "POST", "path": "/v1/app/models/select", "body": {"id": "shakshuka", "download": false}}]
+    },
+    {
+      "label": "Falafel",
+      "at": {"row": 1, "col": 0}, "width": 1,
+      "color": "#163a31", "icon": "microphone-message",
+      "does": "Switch to Falafel, the model for short voice commands.",
+      "flows": [{"trigger": "onShortPress", "method": "POST", "path": "/v1/app/models/select", "body": {"id": "falafel", "download": false}}]
+    },
+    {
+      "label": "Stop",
+      "at": {"row": 1, "col": 1}, "width": 1,
+      "color": "#9a3412", "icon": "stop",
+      "does": "Stop recording and type what was said. A safety net if a hold was interrupted.",
+      "flows": [{"trigger": "onShortPress", "method": "POST", "path": "/v1/app/dictation", "body": {"action": "stop"}}]
+    },
+    {
+      "label": "Tap: start / stop",
+      "at": {"row": 2, "col": 0}, "width": 2,
+      "color": "#c8901c", "icon": "gesture-tap-button",
+      "does": "Toggle: tap to start recording, tap again to stop and type.",
+      "flows": [{"trigger": "onShortPress", "method": "POST", "path": "/v1/app/dictation", "body": {"action": "toggle"}}]
+    },
+    {
+      "label": "Hold to talk",
+      "at": {"row": 3, "col": 0}, "width": 2,
+      "color": "#0f6b5c", "icon": "microphone",
+      "does": "Push to talk: recording runs while the button is held; letting go stops it and types the text.",
+      "flows": [
+        {"trigger": "onTouchStart", "method": "POST", "path": "/v1/app/dictation", "body": {"action": "start"}},
+        {"trigger": "onTouchEnd", "method": "POST", "path": "/v1/app/dictation", "body": {"action": "stop"}}
+      ]
+    }
+  ]
+}

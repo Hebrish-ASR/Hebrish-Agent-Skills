@@ -46,6 +46,12 @@ support:
   `ROUTES` and `desktop/hebrish/ui/api_control.py` (reply fields), `shared/personal-dictionary.md`
   (matching rules) and `desktop/docs/maintaining.md`, "Local API". They need desktop 1.018 or later
   (control endpoints, B-87).
+- For `set-up-hebrish-macro-deck`: the same `ROUTES` (`/v1/app/dictation`, `/v1/app/models/select`,
+  `/v1/app/status`, `/v1/app/models`), model ids from `shared/catalogue.json`, and Macro Deck 3's own schema
+  (button data `widget-data-action-button-v2`, triggers `onShortPress`, `onTouchStart`, `onTouchEnd`; checked
+  against Macro Deck 3.0.2 on 2026-11-16, where the live deck was built and a request proved). The template is
+  `assets/hebrish-dictation.deck.json`; hebrish.app serves the importable `.macroDeckProfile` export of the same
+  deck at `/downloads/macro-deck/`. Change the deck in both together.
 
 - For the Android skills: Hebrish-App `android/app/build.gradle.kts` (package, minSdk 28,
   arm64-v8a), `cdn.hebrish.app/downloads/latest.json` `files.android`, and Hebrish-FDroid
@@ -76,8 +82,8 @@ If any of these change (key rotation, new suite, new arch), update both skills (
 
 ## Copies elsewhere
 
-- The desktop app ships `transcribe-with-hebrish`, `update-hebrish`, `read-hebrish-history` and
-  `fix-hebrish-mistranscriptions` in `desktop/hebrish/data/agent-skills/<name>/SKILL.md` (Hebrish-App
+- The desktop app ships `transcribe-with-hebrish`, `update-hebrish`, `read-hebrish-history`,
+  `fix-hebrish-mistranscriptions` and `set-up-hebrish-macro-deck` in `desktop/hebrish/data/agent-skills/<name>/SKILL.md` (Hebrish-App
   repo; `tests/test_agent_skills.py` checks each URL path against the API's routes). Copy them over
   after every change.
 - hebrish.app serves byte-identical copies of each `SKILL.md` at
