@@ -57,7 +57,7 @@ Filter `models` by `use_case` and `platforms`, keep `support` = `recommended`, a
 `in_apps` covers the user's device if they use the Hebrish app. Typical outcomes:
 
 - Dictation on a phone or computer: **Sabich**, the default in the apps.
-- Streaming dictation on Linux or Windows: **Shakshuka** in the desktop app (Sabich is more accurate).
+- Streaming dictation on Linux or Windows: recommend **Sabich**. Shakshuka (desktop app) shows words while you speak, but it is less accurate and is not recommended yet; mention it only if streaming matters more than accuracy.
 - Voice commands: **Falafel** (0.6B on desktops, Falafel 110M on phones and laptops).
 - Text to speech: **Meorav**, run with the user's own tools; the Hebrish apps have no text to speech.
 
