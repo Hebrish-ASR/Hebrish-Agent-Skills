@@ -1,7 +1,7 @@
 {
   "name": "hebrish",
-  "version": "1.5.0",
-  "description": "Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository, troubleshoot it (hotkey, paste, microphone, model download and APT errors), transcribe audio files on the computer through the desktop app's local API, update the app and its models, read transcript history and add dictionary rules through the same API, set up a Macro Deck phone button pad (hold to talk, toggle, model switching) through the same API, and install Hebrish on an Android phone over adb (sideload the latest APK, or set up the Hebrish F-Droid repository).",
+  "version": "1.6.0",
+  "description": "Install and set up the Hebrish dictation app (hebrish.app) on Linux from its signed APT repository, troubleshoot it (hotkey, paste, microphone, model download and APT errors), transcribe audio files on the computer through the desktop app's local API, update the app and its models, read transcript history and add dictionary rules through the same API, set up a Macro Deck phone button pad (hold to talk, toggle, model switching) through the same API, and install Hebrish on an Android phone over adb (sideload the latest APK, or set up the Hebrish F-Droid repository), and choose the right Hebrish model from the live model inventory (which models are maintained, use case, platforms).",
   "author": {
     "name": "Daniel Rosehill",
     "email": "info@hebrish.app",
@@ -25,6 +25,7 @@
     "adb",
     "f-droid",
     "personal-dictionary",
-    "agents"
+    "agents",
+    "model-inventory"
   ]
 }

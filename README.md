@@ -17,6 +17,7 @@ skills, or with any agent that can read a web page.
 | [`install-hebrish-linux`](skills/install-hebrish-linux/SKILL.md) | Checks the system, adds the signed Hebrish APT repository (verifying its key), installs the `hebrish` package, walks through first-run setup (hotkey permission, choosing and downloading a model, hotkey), explains updates, and uninstalls. |
 | [`troubleshoot-hebrish-linux`](skills/troubleshoot-hebrish-linux/SKILL.md) | Fixes the common problems: hotkey does nothing, text not pasted, no microphone, model download fails, no tray icon, APT errors. |
 | [`transcribe-with-hebrish`](skills/transcribe-with-hebrish/SKILL.md) | Transcribes audio files (one, or a folder) on this computer through the Hebrish desktop app's local API (Settings → Local API, `http://127.0.0.1:8723`, OpenAI-compatible, no key, nothing leaves the machine). |
+| [`choose-hebrish-model`](skills/choose-hebrish-model/SKILL.md) | Picks the right Hebrish model from the live model inventory (hebrish.app/data/model-inventory.json): which models are maintained, use case, platforms, whether the apps offer it. |
 | [`update-hebrish`](skills/update-hebrish/SKILL.md) | Checks for and installs updates to the desktop app and its models, and switches model, through the local API. |
 | [`read-hebrish-history`](skills/read-hebrish-history/SKILL.md) | Reads, searches and exports the desktop app's transcript history through the local API. |
 | [`fix-hebrish-mistranscriptions`](skills/fix-hebrish-mistranscriptions/SKILL.md) | Finds what the desktop app keeps getting wrong, tests find-and-replace rules against real transcript history, and adds them to the personal dictionary. |
@@ -36,6 +37,12 @@ The agent shows you each command that needs `sudo` and asks before running it.
 
 ```text
 Install Hebrish on this computer using https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/install-hebrish-linux/SKILL.md
+```
+
+Not sure which Hebrish model to use, or whether one is still maintained:
+
+```text
+Which Hebrish model should I use? Use https://raw.githubusercontent.com/Hebrish-ASR/Hebrish-Agent-Skills/main/skills/choose-hebrish-model/SKILL.md
 ```
 
 If something does not work afterwards:

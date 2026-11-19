@@ -1,0 +1,39 @@
+{
+  "author": "danielrosehill",
+  "version": "1.0.0",
+  "category": "localization",
+  "tags": {
+    "he": [
+      "מודלים",
+      "זיהוי-דיבור",
+      "בחירת-מודל",
+      "תחזוקה",
+      "עברית"
+    ],
+    "en": [
+      "models",
+      "speech-recognition",
+      "model-choice",
+      "maintenance",
+      "hebrew"
+    ]
+  },
+  "display_name": {
+    "he": "בחירת מודל של Hebrish",
+    "en": "Choose a Hebrish model"
+  },
+  "display_description": {
+    "he": "בוחר את מודל הדיבור המתאים של Hebrish (hebrish.app) מתוך מלאי המודלים החי: אילו מודלים מתוחזקים, לשם מה כל אחד (הכתבה, סטרימינג, פקודות קוליות, טקסט לדיבור), על אילו פלטפורמות הוא רץ, אם אפליקציות Hebrish מציעות אותו, והגרסה האחרונה. השתמשו כשהמשתמש שואל באיזה מודל להשתמש, אם מודל עדיין מתוחזק, או למה מיועד Sabich, Shakshuka, Falafel, Jachnun או Meorav. אל תשתמשו להתקנה (install-hebrish-linux, sideload-hebrish-android) או להחלפת מודל באפליקציה מותקנת (update-hebrish).",
+    "en": "Picks the right Hebrish speech model (hebrish.app) from the live model inventory: which models are maintained, what each is for (dictation, streaming, voice commands, text to speech), which platforms it runs on, whether the Hebrish apps offer it, and its latest version. Use when a user asks which model to use, whether a model is still maintained, or what Sabich, Shakshuka, Falafel, Jachnun or Meorav is for. Do NOT use to install the app (install-hebrish-linux, sideload-hebrish-android) or to switch the model in an installed app (update-hebrish)."
+  },
+  "supported_agents": [
+    "claude-code",
+    "codex",
+    "gemini-cli",
+    "opencode",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "antigravity"
+  ]
+}
