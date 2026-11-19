@@ -34,7 +34,7 @@ Each entry in `models` has:
 | Field | Meaning |
 | --- | --- |
 | `support` | `recommended` (maintained, use these), `available` (download as is, updated rarely or never), `legacy` (replaced, see `successor`), `related` (separate project) |
-| `state` | `active`, `occasional`, `frozen`, `proof-of-concept`, `superseded` |
+| `state` | `active`, `work-in-progress`, `occasional`, `frozen`, `proof-of-concept`, `superseded` |
 | `use_case` | `dictation`, `streaming-dictation`, `voice-commands`, `tts`, `accessory` |
 | `platforms` | `android`, `linux`, `windows`, `macos`, `browser`, `gpu`, `low-power` |
 | `in_apps` | where the Hebrish apps offer it: `android`, `desktop`, or empty |

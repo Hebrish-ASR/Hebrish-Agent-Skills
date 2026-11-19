@@ -25,7 +25,7 @@ curl -s https://hebrish.app/data/model-inventory.json
 | שדה | משמעות |
 | --- | --- |
 | `support` | `recommended` (מתוחזק, השתמשו באלה), `available` (להורדה כמו שהוא, מתעדכן לעיתים רחוקות או בכלל לא), `legacy` (הוחלף, ראו `successor`), `related` (פרויקט נפרד) |
-| `state` | `active`, `occasional`, `frozen`, `proof-of-concept`, `superseded` |
+| `state` | `active`, `work-in-progress`, `occasional`, `frozen`, `proof-of-concept`, `superseded` |
 | `use_case` | `dictation`, `streaming-dictation`, `voice-commands`, `tts`, `accessory` |
 | `platforms` | `android`, `linux`, `windows`, `macos`, `browser`, `gpu`, `low-power` |
 | `in_apps` | היכן אפליקציות Hebrish מציעות אותו: `android`, `desktop`, או ריק |
